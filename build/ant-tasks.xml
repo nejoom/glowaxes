@@ -4,7 +4,7 @@
     <javadoc access="public"
              additionalparam="-J-Xmx180m -link http://java.sun.com/j2se/1.5.0/docs/api"
              author="true"
-             classpath="lib/servlet.jar:WebContent/WEB-INF/lib/pdf-transcoder.jar:WebContent/WEB-INF/lib/batik-extension.jar:WebContent/WEB-INF/lib/batik-css.jar:WebContent/WEB-INF/lib/batik-transcoder.jar:WebContent/WEB-INF/lib/batik-parser.jar:WebContent/WEB-INF/lib/batik-swing.jar:WebContent/WEB-INF/lib/batik-anim.jar:WebContent/WEB-INF/lib/batik-util.jar:WebContent/WEB-INF/lib/batik-awt-util.jar:WebContent/WEB-INF/lib/batik-codec.jar:WebContent/WEB-INF/lib/xml-apis-ext.jar:WebContent/WEB-INF/lib/batik-ext.jar:WebContent/WEB-INF/lib/batik-xml.jar:WebContent/WEB-INF/lib/batik-script.jar:WebContent/WEB-INF/lib/xerces_2_5_0.jar:WebContent/WEB-INF/classes:WebContent/WEB-INF/lib/batik-gui-util.jar:WebContent/WEB-INF/lib/jdom.jar:WebContent/WEB-INF/lib/xml-apis.jar:WebContent/WEB-INF/lib/batik-bridge.jar:WebContent/WEB-INF/lib/js.jar:../charts/lib/servlet.jar:WebContent/WEB-INF/lib/xalan-2.6.0.jar:WebContent/WEB-INF/lib/log4j-1.2.8.jar:WebContent/WEB-INF/lib/batik-svg-dom.jar:WebContent/WEB-INF/lib/batik-svggen.jar:WebContent/WEB-INF/lib/batik-gvt.jar:WebContent/WEB-INF/lib/batik-dom.jar"
+             classpath="/WebContent/WEB-INF/lib/pdf-transcoder.jar:/WebContent/WEB-INF/lib/batik-extension.jar:/WebContent/WEB-INF/lib/batik-css.jar:/WebContent/WEB-INF/lib/batik-transcoder.jar:WebContent/WEB-INF/lib/batik-parser.jar:/WebContent/WEB-INF/lib/batik-swing.jar:/WebContent/WEB-INF/lib/batik-anim.jar:/WebContent/WEB-INF/lib/batik-util.jar:/WebContent/WEB-INF/lib/batik-awt-util.jar:/WebContent/WEB-INF/lib/batik-codec.jar:/WebContent/WEB-INF/lib/xml-apis-ext.jar:/WebContent/WEB-INF/lib/batik-ext.jar:/WebContent/WEB-INF/lib/batik-xml.jar:/WebContent/WEB-INF/lib/batik-script.jar:/WebContent/WEB-INF/lib/xerces_2_5_0.jar:/WebContent/WEB-INF/classes:/WebContent/WEB-INF/lib/batik-gui-util.jar:/WebContent/WEB-INF/lib/jdom.jar:/WebContent/WEB-INF/lib/xml-apis.jar:/WebContent/WEB-INF/lib/batik-bridge.jar:/WebContent/WEB-INF/lib/js.jar:/WebContent/WEB-INF/lib/xalan-2.6.0.jar:/WebContent/WEB-INF/lib/log4j-1.2.8.jar:WebContent/WEB-INF/lib/batik-svg-dom.jar:/WebContent/WEB-INF/lib/batik-svggen.jar:/WebContent/WEB-INF/lib/batik-gvt.jar:/WebContent/WEB-INF/lib/batik-dom.jar"
              destdir="WebContent/javadoc"
              doctitle="glowaxes"
              nodeprecated="false"
@@ -15,7 +15,7 @@
              splitindex="true"
              use="true"
              version="true">
-      <fileset dir="src" defaultexcludes="yes">
+      <fileset dir="../src" defaultexcludes="yes">
         <include name="**/*.java" />
         <exclude name="trash/**/*.java" />
       </fileset>
@@ -40,7 +40,7 @@
           description="Creates a bin jar for the charts project">
     <jar jarfile="glowaxes.jar"
          includesfile="jared.txt"
-         basedir="build/classes" />
+         basedir="classes" />
   </target>
 
 </project>
