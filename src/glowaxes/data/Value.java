@@ -44,7 +44,6 @@ import glowaxes.util.TypeConverter;
 import org.apache.log4j.Logger;
 import org.jdom.Element;
 
-// TODO: Auto-generated Javadoc
 /**
  * <p>
  * The Value class represents a Value in a svg chart (see also {@link Series},
@@ -64,6 +63,7 @@ import org.jdom.Element;
 public class Value {
 
     /** The logger. */
+    @SuppressWarnings("unused")
     private static Logger logger = Logger.getLogger(Value.class.getName());
 
     /** The a1. */
