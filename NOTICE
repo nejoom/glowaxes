@@ -1,4 +1,4 @@
-LEGAL INFORMATION
+[LEGAL INFORMATION]
 
 This LEGAL file accompanies the "glowaxes" program. It includes 
 notices required by the licenses as well as general legal notices.
@@ -12,15 +12,16 @@ All Rights Reserved.
 
 image: glowaxes.gif
 
-"glowaxes.com is a provider of data viszualization tools"
-http://www.glowaxes.com
+Glowaxes.com is a provider of data viszualization tools
+
+Please visit http://www.glowaxes.com for details on using this software.
 
 =========================================
  SOURCE CODE AVAILABILITY NOTICE
 =========================================
 
 The source code for this product is available from:
-http://www.glowaxes.com/src
+http://glowaxes.org/src
 
 =========================================
  GENERAL LEGAL NOTICES
@@ -36,7 +37,7 @@ Except as explicitly indicated in the file itself, the contents of all files
 that make up this product are subject to the Common Public Attribution License 
 Version 1.0 (the "License"; alternatively, the "CPAL"); you may not use the 
 files except in compliance with the License. You may obtain a copy of the 
-License at http://www.glowaxes.com/license. The License is based 
+License at http://glowaxes.org/license. The License is based 
 on the Mozilla Public License Version 1.1 but Sections 14 and 15 have been 
 added to cover use of software over a computer network and provide for limited 
 attribution for the Original Developer. In addition, Exhibit A has been 
