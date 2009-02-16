@@ -27,7 +27,7 @@
  * Code.
  *
  * Based on commercial needs the contents of this file may be used under the
- * terms of the Elements End-User License Agreeement (the Elements License), in
+ * terms of the Elements End-User License Agreement (the Elements License), in
  * which case the provisions of the Elements License are applicable instead of
  * those above.
  *
