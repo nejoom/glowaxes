@@ -62,7 +62,7 @@ import org.jdom.Element;
  * 
  * @see Group Group for more details
  * @version ${version}, 5-jun-2006
- * @author Eddie Moojen
+ * @author <a href="mailto:eddie@tinyelements.com">Eddie Moojen</a>
  * @since ${since_tag}
  */
 public class Series {
