@@ -54,6 +54,8 @@ import org.jdom.Element;
 
 /**
  * The Class Area.
+ * 
+ * @author <a href="mailto:eddie@tinyelements.com">Eddie Moojen</a>
  */
 public class Area extends SimpleGlyph {
 
