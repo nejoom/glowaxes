@@ -75,6 +75,8 @@ import org.jdom.output.Format;
 
 /**
  * The Class Chart.
+ * 
+ * @author <a href="mailto:eddie@tinyelements.com">Eddie Moojen</a>
  */
 public class Chart extends SimpleGlyph {
 

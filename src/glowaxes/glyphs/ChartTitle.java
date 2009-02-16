@@ -42,7 +42,7 @@ import org.apache.log4j.Logger;
 /**
  * The Class ChartTitle represents a chart's title.
  * 
- * @author eddie
+ * @author <a href="mailto:eddie@tinyelements.com">Eddie Moojen</a>
  */
 public class ChartTitle extends TextGlyph {
 

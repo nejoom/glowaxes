@@ -56,6 +56,8 @@ import org.apache.log4j.Logger;
 
 /**
  * The Class Axis.
+ * 
+ * @author <a href="mailto:eddie@tinyelements.com">Eddie Moojen</a>
  */
 public abstract class Axis extends SimpleGlyph {
 
