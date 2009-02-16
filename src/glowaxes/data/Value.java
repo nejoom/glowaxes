@@ -27,7 +27,7 @@
  * Code.
  *
  * Based on commercial needs the contents of this file may be used under the
- * terms of the Elements End-User License Agreeement (the Elements License), in
+ * terms of the Elements End-User License Agreement (the Elements License), in
  * which case the provisions of the Elements License are applicable instead of
  * those above.
  *
@@ -324,7 +324,8 @@ public class Value {
     /**
      * This will set the a1 coordinate for this Value.
      * 
-     * @param _a1 <code>Object</code> the _a1 coordinate for this Value.
+     * @param _a1
+     *            <code>Object</code> the _a1 coordinate for this Value.
      */
     public void setA1(Object _a1) {
         a1 = _a1;
@@ -333,7 +334,8 @@ public class Value {
     /**
      * This will set the a2 coordinate for this Value.
      * 
-     * @param _a2 <code>Object</code> the _a2 coordinate for this Value.
+     * @param _a2
+     *            <code>Object</code> the _a2 coordinate for this Value.
      */
     public void setA2(Object _a2) {
         a2 = _a2;
@@ -342,7 +344,8 @@ public class Value {
     /**
      * This will set the b1 coordinate for this Value.
      * 
-     * @param _b1 <code>Object</code> the _b1 coordinate for this Value.
+     * @param _b1
+     *            <code>Object</code> the _b1 coordinate for this Value.
      */
     public void setB1(Object _b1) {
         b1 = _b1;
@@ -351,7 +354,8 @@ public class Value {
     /**
      * This will set the b2 coordinate for this Value.
      * 
-     * @param _b2 <code>Object</code> the _b2 coordinate for this Value.
+     * @param _b2
+     *            <code>Object</code> the _b2 coordinate for this Value.
      */
     public void setB2(Object _b2) {
         b2 = _b2;
@@ -360,7 +364,8 @@ public class Value {
     /**
      * This will set the label for this Value.
      * 
-     * @param _label <code>Element</code> the _label for this Value.
+     * @param _label
+     *            <code>Element</code> the _label for this Value.
      */
     public void setLabel(Element _label) {
         label = _label;
@@ -369,8 +374,9 @@ public class Value {
     /**
      * This will set the label's background style for this Value.
      * 
-     * @param _labelBackgroundStyle <code>Object</code> the _labelBackgroundStyle coordinate for
-     * this Value.
+     * @param _labelBackgroundStyle
+     *            <code>Object</code> the _labelBackgroundStyle coordinate for
+     *            this Value.
      */
     public void setLabelBackgroundStyle(String _labelBackgroundStyle) {
         labelBackgroundStyle = Defs.parseStyle(_labelBackgroundStyle);
@@ -379,8 +385,9 @@ public class Value {
     /**
      * This will set the label's events.
      * 
-     * @param _labelEvents <code>String</code> the _labelEvents link to go to for a
-     * tip.
+     * @param _labelEvents
+     *            <code>String</code> the _labelEvents link to go to for a
+     *            tip.
      */
     public void setLabelEvents(String _labelEvents) {
         labelEvents = _labelEvents;
@@ -389,7 +396,8 @@ public class Value {
     /**
      * This will set the label's href.
      * 
-     * @param _labelHref <code>String</code> the _labelHref link to go to for a tip.
+     * @param _labelHref
+     *            <code>String</code> the _labelHref link to go to for a tip.
      */
     public void setLabelHref(String _labelHref) {
         labelHref = _labelHref;
@@ -398,7 +406,8 @@ public class Value {
     /**
      * This will set the label style this Value.
      * 
-     * @param _labelStyle <code>String</code> the _labelStyle for this Value.
+     * @param _labelStyle
+     *            <code>String</code> the _labelStyle for this Value.
      */
     public void setLabelStyle(String _labelStyle) {
 
@@ -408,7 +417,8 @@ public class Value {
     /**
      * Sets the parent series.
      * 
-     * @param _series the new parent series
+     * @param _series
+     *            the new parent series
      */
     protected void setParentSeries(Series _series) {
         series = _series;
@@ -417,7 +427,8 @@ public class Value {
     /**
      * This will set the shape for this Value.
      * 
-     * @param _shape <code>String</code> the _shape coordinate for this Value.
+     * @param _shape
+     *            <code>String</code> the _shape coordinate for this Value.
      */
     public void setShape(String _shape) {
         shape = _shape;
@@ -427,7 +438,8 @@ public class Value {
      * This will set the spot coordinate for this Value, used for setting the
      * svg coordinate of a category.
      * 
-     * @param _spot <code>Object</code> the _spot coordinate for this Value.
+     * @param _spot
+     *            <code>Object</code> the _spot coordinate for this Value.
      */
     public void setSpot(Object _spot) {
         spot = _spot;
@@ -436,7 +448,8 @@ public class Value {
     /**
      * This will set the style for this Value.
      * 
-     * @param _style <code>Object</code> the _style coordinate for this Value.
+     * @param _style
+     *            <code>Object</code> the _style coordinate for this Value.
      */
     public void setStyle(String _style) {
         style = Defs.parseStyle(_style);
@@ -445,7 +458,8 @@ public class Value {
     /**
      * This will set the x coordinate for this Value.
      * 
-     * @param _x <code>Object</code> the _x coordinate for this Value.
+     * @param _x
+     *            <code>Object</code> the _x coordinate for this Value.
      */
     public void setX(Object _x) {
         x = _x;
@@ -454,7 +468,8 @@ public class Value {
     /**
      * This will set the y coordinate for this Value.
      * 
-     * @param _y <code>Object</code> the _y coordinate for this Value.
+     * @param _y
+     *            <code>Object</code> the _y coordinate for this Value.
      */
     public void setY(Object _y) {
         y = _y;
@@ -463,7 +478,8 @@ public class Value {
     /**
      * This will set the z coordinate for this Value.
      * 
-     * @param _z <code>Object</code> the _z coordinate for this Value.
+     * @param _z
+     *            <code>Object</code> the _z coordinate for this Value.
      */
     public void setZ(Object _z) {
         z = _z;

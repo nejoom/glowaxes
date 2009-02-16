@@ -27,7 +27,7 @@
  * Code.
  *
  * Based on commercial needs the contents of this file may be used under the
- * terms of the Elements End-User License Agreeement (the Elements License), in
+ * terms of the Elements End-User License Agreement (the Elements License), in
  * which case the provisions of the Elements License are applicable instead of
  * those above.
  *
@@ -35,7 +35,6 @@
  * the Elements License please visit http://glowaxes.org/license for details.
  *
  */
-
 package glowaxes.data;
 
 import glowaxes.sql.DatabaseStatementsManager;
@@ -138,7 +137,7 @@ public class SqlSerie {
      * This will return the default label background svg style for this Series.
      * 
      * @return The <code>String</code> defaultLabelBackgroundStyle for this
-     * Series.
+     *         Series.
      */
     public String getDefaultLabelBackgroundStyle() {
         return defaultLabelBackgroundStyle;
@@ -233,7 +232,8 @@ public class SqlSerie {
     /**
      * Gets the sql attribute.
      * 
-     * @param key the key
+     * @param key
+     *            the key
      * 
      * @return the sql attribute
      */
@@ -248,8 +248,10 @@ public class SqlSerie {
     /**
      * Gets the val.
      * 
-     * @param key the key
-     * @param i the i
+     * @param key
+     *            the key
+     * @param i
+     *            the i
      * 
      * @return the val
      */
@@ -296,7 +298,8 @@ public class SqlSerie {
     /**
      * Sets the content.
      * 
-     * @param _content the new content
+     * @param _content
+     *            the new content
      */
     public void setContent(String _content) {
         content = _content;
@@ -305,7 +308,8 @@ public class SqlSerie {
     /**
      * Sets the parameters.
      * 
-     * @param _parameters the new parameters
+     * @param _parameters
+     *            the new parameters
      */
     public void setParameters(ArrayList<Object> _parameters) {
         parameters = _parameters;
@@ -314,7 +318,8 @@ public class SqlSerie {
     /**
      * Sets the data source.
      * 
-     * @param _dataSource the new data source
+     * @param _dataSource
+     *            the new data source
      */
     public void setDataSource(String _dataSource) {
         dataSource = _dataSource;
@@ -323,7 +328,8 @@ public class SqlSerie {
     /**
      * This will set the default label for the values in this Series.
      * 
-     * @param _defaultLabel default label for the values in this Series.
+     * @param _defaultLabel
+     *            default label for the values in this Series.
      */
     public void setDefaultLabel(String _defaultLabel) {
         defaultLabel = _defaultLabel;
@@ -333,7 +339,8 @@ public class SqlSerie {
      * This will set the default label background style for the values label in
      * this Series.
      * 
-     * @param defaultLabelBackgroundStyle default label background style the values in this Series.
+     * @param defaultLabelBackgroundStyle
+     *            default label background style the values in this Series.
      */
     public void setDefaultLabelBackgroundStyle(
             String defaultLabelBackgroundStyle) {
@@ -344,7 +351,8 @@ public class SqlSerie {
     /**
      * This will set the default label svg style for this Series.
      * 
-     * @param _defaultLabelStyle the default label svg style for this Series.
+     * @param _defaultLabelStyle
+     *            the default label svg style for this Series.
      */
     public void setDefaultLabelStyle(String _defaultLabelStyle) {
 
@@ -355,8 +363,9 @@ public class SqlSerie {
     /**
      * This will set the default svg shape element for this Series.
      * 
-     * @param _defaultShape the default the default svg shape element for this Series used
-     * to plot values.
+     * @param _defaultShape
+     *            the default the default svg shape element for this Series used
+     *            to plot values.
      */
     public void setDefaultShape(String _defaultShape) {
         defaultShape = _defaultShape;
@@ -365,8 +374,9 @@ public class SqlSerie {
     /**
      * This will set the default shape style for this Series.
      * 
-     * @param _defaultStyle the default shape svg style for this Series used to plot
-     * values.
+     * @param _defaultStyle
+     *            the default shape svg style for this Series used to plot
+     *            values.
      */
     public void setDefaultShapeStyle(String _defaultStyle) {
         defaultStyle = Defs.parseStyle(_defaultStyle);
@@ -375,8 +385,9 @@ public class SqlSerie {
     /**
      * This will set the default label for the values in this Series.
      * 
-     * @param _Id set the id, identifying this class for this Series. id does
-     * not have to be unique.
+     * @param _Id
+     *            set the id, identifying this class for this Series. id does
+     *            not have to be unique.
      */
     public void setId(String _Id) {
         id = _Id;
@@ -385,7 +396,8 @@ public class SqlSerie {
     /**
      * This will set the legend for this Series.
      * 
-     * @param _legendLabel the legend for this Series
+     * @param _legendLabel
+     *            the legend for this Series
      */
     public void setLegend(String _legendLabel) {
         legendLabel = _legendLabel;
@@ -394,7 +406,8 @@ public class SqlSerie {
     /**
      * This will set the line style for this Series.
      * 
-     * @param _lineStyle the style for lines making this Series
+     * @param _lineStyle
+     *            the style for lines making this Series
      */
     public void setLineStyle(String _lineStyle) {
         lineStyle = Defs.parseStyle(_lineStyle);
@@ -403,7 +416,8 @@ public class SqlSerie {
     /**
      * Sets the sql attributes.
      * 
-     * @param _sqlAttributes the _sql attributes
+     * @param _sqlAttributes
+     *            the _sql attributes
      */
     @SuppressWarnings("unchecked")
     public void setSqlAttributes(HashMap<String, Object> _sqlAttributes) {
@@ -413,13 +427,16 @@ public class SqlSerie {
     /**
      * Sets the var.
      * 
-     * @param _var the new var
+     * @param _var
+     *            the new var
      */
     public void setVar(String _var) {
         var = _var;
     }
 
-    /* (non-Javadoc)
+    /*
+     * (non-Javadoc)
+     * 
      * @see java.lang.Object#equals(java.lang.Object)
      */
     public boolean equals(Object valueObject) {
