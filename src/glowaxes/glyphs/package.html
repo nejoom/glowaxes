@@ -1,0 +1,37 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+<html>
+<head>
+<title>glowaxes.glyphs package</title>
+<!--
+
+  @(#)package.html
+
+-->
+</head>
+<body bgcolor="white">
+All charts symbols (called glyphs) are defined in this package, examples
+include legends and rotated text.
+<p>This package provides implementations for rendering glyphs in
+charts.</p>
+<p>There are three interfaces in this package, at the time of this
+writing. These interfaces provide the abstraction needed for rendering
+glyphs.</p>
+<ol>
+    <li><code>IGlyph</code> provides the method contract for the
+    glyphs in a two dimensional coordinate system.
+    <p>The coordinate nomenclature is from standard geometry: (x,
+    y).</p>
+    <p>Most glyph implement the IGlyph interface by extending <code>SimpleGlyph</code>
+    or <code>TextGlyph</code>, which represent a simple filled rectangle
+    on the chart, or multi-lined text.</p>
+    </li>
+    <li>The <code>ITextGlyph</code> interface extends the IGlyph
+    interface to provide the extra functionality needed to manage
+    textual content.</li>
+    <li>The <code>IGlyphLayoutManager</code> interface is
+    implemented by glyphs that manage the layout of more than one glyph.
+    The interface provides a contract of methods that need to be
+    implemented to manage the layout of several glyphs.</li>
+</ol>
+</body>
+</html>
