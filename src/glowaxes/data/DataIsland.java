@@ -26,10 +26,9 @@
  * Elements is the Initial Developer and the Original Developer of the Original
  * Code.
  *
- * Based on commercial needs the contents of this file may be used under the
- * terms of the Elements End-User License Agreement (the Elements License), in
- * which case the provisions of the Elements License are applicable instead of
- * those above.
+ * The contents of this file may be used under the terms of the Elements 
+ * End-User License Agreement (the Elements License), in which case the 
+ * provisions of the Elements License are applicable instead of those above.
  *
  * You may wish to allow use of your version of this file under the terms of
  * the Elements License please visit http://glowaxes.org/license for details.
