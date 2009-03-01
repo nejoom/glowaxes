@@ -5,3 +5,5 @@ Check out as a project configured using the New Project Wizard -> Finished
 Choose Web -> Dynamic Web Project
 Then to compile choose:
 Project preferences -> Java Build Path -> Add Library -> Server Runtime
+
+Test to see if rasterizer.jsp renders a simple button.
