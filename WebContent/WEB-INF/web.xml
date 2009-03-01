@@ -21,7 +21,7 @@
          xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd"
          version="2.5">
 
-  <description>A jsp tag lib utility to generate charts.</description>
+  <description>A jsp tag lib utility to generate charts and raster svg.</description>
   <display-name>Glowaxes</display-name>
   <welcome-file-list>
     <welcome-file>index.jsp</welcome-file>
