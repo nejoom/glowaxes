@@ -1,0 +1,269 @@
+<?xml version="1.0" encoding="US-ASCII"?>
+  <defs>
+      <filter id="box.shadow" filterUnits="objectBoundingBox"
+      x="-0.1" y="-0.1" width="1.2" height="1.2">
+
+      <!-- temporary white surface -->
+      <feGaussianBlur in="SourceAlpha" stdDeviation="0" result="blur"/>
+      <feSpecularLighting in="blur" surfaceScale="15" specularConstant="1" 
+                          specularExponent="5" lighting-color="white"
+                          result="specOut">
+				<fePointLight x="-5000" y="-10000" z="20000"/>
+      </feSpecularLighting>
+      <feComposite in="specOut" in2="SourceAlpha" operator="in" result="specOut"/>
+      
+      <feGaussianBlur in="SourceAlpha" stdDeviation="4" result="alpha_blur"/>
+
+      <!-- virtual shadow effect -->
+      <feOffset in="alpha_blur" dx="4" dy="4" result="offset_alpha_blur"/>
+
+      <!-- vitual lighting effect -->
+      <feSpecularLighting in="alpha_blur" surfaceScale="2" specularConstant="1"
+        specularExponent="20" lighting-color="white" result="spec_light">
+        <fePointLight x="-5000" y="-10000" z="10000"/>
+      </feSpecularLighting>
+      <feComposite in="spec_light" in2="SourceAlpha" operator="in"
+        result="spec_light"/>
+      <feComposite in="SourceGraphic" in2="spec_light"
+        operator="out" result="spec_light_fill"/>
+
+      <!-- combine effects -->
+      <feMerge>
+        <feMergeNode in="specOut"/>
+        <feMergeNode in="offset_alpha_blur"/>
+        <feMergeNode in="spec_light_fill"/>
+      </feMerge>
+    </filter>
+    
+    <filter id="text.adobe" filterUnits="objectBoundingBox" x="-10%" y="-10%" width="120%" height="120%">
+      <!--Copyright 1999 Adobe Systems. You may copy, modify, and distribute this file, if you include this notice & do not charge for the distribution. This file is provided "AS-IS" without warranties of any kind, including any implied warranties.-->
+      <feGaussianBlur in="SourceAlpha" stdDeviation="4" result="blur" />
+      <feOffset in="blur" dx="4" dy="4" result="offsetBlurredAlpha" />
+      <feSpecularLighting in="blur" surfaceScale="5" specularConstant="0.9" specularExponent="20" lightColor="white" result="specularOut">
+        <feDistantLight azimuth="35" elevation="100" />
+      </feSpecularLighting>
+      <feComposite in="specularOut" in2="SourceAlpha" operator="in" result="specularOut" />
+      <feComposite in="SourceGraphic" in2="specularOut" operator="arithmetic" k1="0" k2="1" k3="1" k4="0" result="litPaint" />
+      <feMerge>
+        <feMergeNode in="offsetBlurredAlpha" />
+        <feMergeNode in="litPaint" />
+      </feMerge>
+    </filter>
+    
+    <filter id="box.bevel" filterUnits="objectBoundingBox"
+      x="-0.1" y="-0.1" width="1.2" height="1.2">
+
+      <!-- temporary white surface -->
+      <feGaussianBlur in="SourceAlpha" stdDeviation="0" result="blur"/>
+      <feSpecularLighting in="blur" surfaceScale="15" specularConstant="1" 
+                          specularExponent="5" lighting-color="white"
+                          result="specOut">
+				<fePointLight x="-5000" y="-10000" z="20000"/>
+      </feSpecularLighting>
+      <feComposite in="specOut" in2="SourceAlpha" operator="in" result="specOut"/>
+      
+      <feGaussianBlur in="SourceAlpha" stdDeviation="4" result="alpha_blur"/>
+
+      <!-- virtual shadow effect -->
+      <feOffset in="alpha_blur" dx="4" dy="4" result="offset_alpha_blur"/>
+
+      <!-- vitual lighting effect -->
+      <feSpecularLighting in="alpha_blur" surfaceScale="2" specularConstant="1"
+        specularExponent="20" lighting-color="white" result="spec_light">
+        <fePointLight x="-5000" y="-10000" z="10000"/>
+      </feSpecularLighting>
+      <feComposite in="spec_light" in2="SourceAlpha" operator="in"
+        result="spec_light"/>
+      <feComposite in="SourceGraphic" in2="spec_light"
+        operator="out" result="spec_light_fill"/>
+
+      <!-- combine effects -->
+      <feMerge>
+        <feMergeNode in="specOut"/>
+        <feMergeNode in="spec_light_fill"/>
+      </feMerge>
+    </filter>
+    
+    <filter id="text.gradient" filterUnits="objectBoundingBox"
+      x="-0.1" y="-0.1" width="1.2" height="1.2">
+
+      <!-- temporary white surface -->
+      <feGaussianBlur in="SourceAlpha" stdDeviation="0" result="blur"/>
+      <feSpecularLighting in="blur" surfaceScale="15" specularConstant="1" 
+                          specularExponent="5" lighting-color="white"
+                          result="specOut">
+				<fePointLight x="-5000" y="-10000" z="20000"/>
+      </feSpecularLighting>
+      <feComposite in="specOut" in2="SourceAlpha" operator="in" result="specOut"/>
+      
+      <feGaussianBlur in="SourceAlpha" stdDeviation="4" result="alpha_blur"/>
+
+      <!-- virtual shadow effect -->
+      <feOffset in="alpha_blur" dx="4" dy="4" result="offset_alpha_blur"/>
+
+      <!-- vitual lighting effect -->
+      <feSpecularLighting in="alpha_blur" surfaceScale="2" specularConstant="1"
+        specularExponent="20" lighting-color="white" result="spec_light">
+        <fePointLight x="-5000" y="-10000" z="10000"/>
+      </feSpecularLighting>
+      <feComposite in="spec_light" in2="SourceAlpha" operator="in"
+        result="spec_light"/>
+      <feComposite in="SourceGraphic" in2="spec_light"
+        operator="out" result="spec_light_fill"/>
+
+      <!-- combine effects -->
+      <feMerge>
+        <feMergeNode in="specOut"/>
+        <feMergeNode in="spec_light_fill"/>
+      </feMerge>
+    </filter>
+    
+    <filter y="0%" x="0%" id="text.bevel" width="100%" height="100%">
+      <feGaussianBlur result="blur" in="SourceAlpha" stdDeviation="1" />
+      <feOffset result="offsetBlur" in="blur" dy="-1" dx="-2" />
+      <feSpecularLighting result="specOut" in="blur"  lighting-color="white" surfaceScale="2" specularExponent="10" specularConstant="5">
+        <fePointLight y="-1000" x="-5000" z="-200" />
+      </feSpecularLighting>
+      <feComposite result="specOut" in2="SourceAlpha" operator="in" in="specOut" />
+      <feComposite result="litPaint" in2="specOut" operator="arithmetic" in="SourceGraphic" k4="0" k1="0" k3="1" k2="1" />
+      <feGaussianBlur in="litPaint" out="final" stdDeviation="0.5" />
+
+               
+    </filter>
+    
+    
+    <filter id="text.gloss" filterUnits="objectBoundingBox" x="-10%" y="-10%" width="120%" height="120%">
+      <!--Copyright 1999 Adobe Systems. You may copy, modify, and distribute this file, if you include this notice & do not charge for the distribution. This file is provided "AS-IS" without warranties of any kind, including any implied warranties.-->
+      <feGaussianBlur in="SourceAlpha" stdDeviation="4" result="blur" />
+      <feOffset in="blur" dx="4" dy="4" result="offsetBlurredAlpha" />
+      <feSpecularLighting in="blur" surfaceScale="5" specularConstant="0.9" specularExponent="20" lightColor="white" result="specularOut">
+        <feDistantLight azimuth="100" elevation="30" />
+      </feSpecularLighting>
+      <feComposite in="specularOut" in2="SourceAlpha" operator="in" result="specularOut" />
+      <feComposite in="SourceGraphic" in2="specularOut" operator="arithmetic" k1="0" k2="1" k3="1" k4="0" result="litPaint" />
+      <feMerge>
+        <feMergeNode in="offsetBlurredAlpha" />
+        <feMergeNode in="litPaint" />
+      </feMerge>
+    </filter>
+    
+    <filter id="text.gloss2" filterUnits="objectBoundingBox" x="-10%" y="-10%" width="120%" height="120%">
+      <feGaussianBlur in="SourceAlpha" stdDeviation="4" result="blur" />
+      <feOffset in="blur" dx="4" dy="4" result="offsetBlur" />
+      <feSpecularLighting in="blur" surfaceScale="5" specularConstant=".75" specularExponent="20" lighting-color="#bbbbbb" result="specOut">
+        <fePointLight x="-5000" y="-10000" z="20000" />
+      </feSpecularLighting>
+      <feComposite in="specOut" in2="SourceAlpha" operator="in" result="specOut" />
+      <feComposite in="SourceGraphic" in2="specOut" operator="arithmetic" k1="0" k2="1" k3="1" k4="0" result="litPaint" />
+    </filter>
+    
+    
+    <filter id="text.glow" filterUnits="objectBoundingBox" x="-10%" y="-10%"
+              width="150%" height="150%">
+      <!-- make a slightly bigger version of the input alpha channel -->
+      <feMorphology in="SourceAlpha" result="morphedAlpha" radius="0.8"
+                operator="dilate"/>
+      <!-- blur this -->
+      <feGaussianBlur in="morphedAlpha" result="blurredAlpha"
+                stdDeviation="0.5"/>
+      <!-- create some lightblue color -->
+      <feFlood result="flooded" style="flood-color:white;flood-opacity:0.4"/>
+      <!-- mix the color with the resized and blurred alpha information -->
+      <feComposite operator="in" in="flooded" in2="blurredAlpha"
+                result="coloredShadow"/>
+      <!-- put the input on top of the result -->
+      <feComposite in="SourceGraphic" in2="coloredShadow" operator="over"/>
+    </filter>
+      
+    
+    <filter y="0%" x="0%" id="box.light" filterUnits="objectBoundingBox" width="100%" height="100%">
+      <feGaussianBlur result="blur" in="SourceGraphic" id="blur" stdDeviation="2" />
+      <feOffset result="offsetBlurredAlpha" in="blur" id="offset" dy="0" dx="0" />
+      <feFlood result="color" id="color" style="flood-color:black; flood-opacity:0.0" />
+      <feComposite result="offsetBlurredAlpha" in2="offsetBlurredAlpha" operator="in" in="color" id="shadowColor" />
+      <feDiffuseLighting result="diffuse" in="blur" id="diffuse" surfaceScale="1" diffuseConstant="1" resultScale="1" lighting-color="white">
+        <feDistantLight id="light2" elevation="60" azimuth="135" />
+      </feDiffuseLighting>
+      <feSpecularLighting result="specularOut" in="blur" surfaceScale="3" specularExponent="20" specularConstant="1" lighting-color="white">
+        <feDistantLight id="light" elevation="20" azimuth="180" />
+      </feSpecularLighting>
+      <feComposite result="specularOut" in2="SourceAlpha" operator="in" in="specularOut" />
+      <feComposite result="litPaint" in2="diffuse" operator="arithmetic" in="SourceGraphic" k4="0" k1="1" k3="0" k2="0" />
+      <feComposite result="litPaint" in2="specularOut" operator="arithmetic" in="litPaint" k4="0" k1="0" k3="1" k2="1" />
+      <feMerge>
+        <feMergeNode in="offsetBlurredAlpha" />
+        <feMergeNode in="litPaint" />
+      </feMerge>
+       <feGaussianBlur result="blur" stdDeviation="0.2" />
+    </filter>
+    
+    
+    <filter y="0%" x="0%" id="box.light2" filterUnits="objectBoundingBox" width="100%" height="100%">
+      <feGaussianBlur result="blur" in="SourceGraphic" id="blur" stdDeviation="2" />
+      <feOffset result="offsetBlurredAlpha" in="blur" id="offset" dy="1" dx="1" />
+      <feFlood result="color" id="color" style="flood-color:black; flood-opacity:0.0" />
+      <feComposite result="offsetBlurredAlpha" in2="offsetBlurredAlpha" operator="in" in="color" id="shadowColor" />
+      <feDiffuseLighting result="diffuse" in="blur" id="diffuse" surfaceScale="3" diffuseConstant="1" resultScale="1" lighting-color="white">
+        <feDistantLight id="light2" elevation="80" azimuth="135" />
+      </feDiffuseLighting>
+      <feSpecularLighting result="specularOut" in="blur" surfaceScale="1.5" specularExponent="20" specularConstant="20" lighting-color="white">
+        <fePointLight x="-5000" y="-5000" z="50" />
+      </feSpecularLighting>
+      <feComposite result="specularOut" in2="SourceAlpha" operator="in" in="specularOut" />
+      <feComposite result="litPaint" in2="diffuse" operator="arithmetic" in="SourceGraphic" k4="0" k1="1" k3="0" k2="0" />
+      <feComposite result="litPaint" in2="specularOut" operator="arithmetic" in="litPaint" k4="0" k1="0" k3="1" k2="1" />
+      <feMerge>
+        <feMergeNode in="offsetBlurredAlpha" />
+        <feMergeNode in="litPaint" />
+      </feMerge>
+       <feGaussianBlur result="blur" stdDeviation="0.2" />
+    </filter>
+    
+    <filter id="box.pie.bad">
+      <desc>3D lighting effect suitable for pies and lines</desc>
+      <feGaussianBlur in="SourceAlpha" stdDeviation="8" result="blur" />
+      <feOffset in="blur" dx="20" dy="20" result="offsetBlur" />
+      <feSpecularLighting in="blur" surfaceScale="1" specularConstant="1" specularExponent="3" style="lighting-color:beige" result="specOut">
+        <fePointLight x="5000" y="5000" z="20" />
+      </feSpecularLighting>
+      <feComposite in="specOut" in2="SourceAlpha" operator="in" result="specOut" />
+      <feComposite in="SourceGraphic" in2="specOut" operator="arithmetic" k1="0" k2="1" k3="1" k4="0" result="litPaint" />
+      <feMerge>
+        <feMergeNode in="offsetBlur" />
+        <feMergeNode in="litPaint" />
+      </feMerge>
+    </filter>
+    
+    <filter id="text.shadow" filterUnits="objectBoundingBox" x="-10%" y="-10%" width="120%" height="120%">
+      <feGaussianBlur in="SourceAlpha" stdDeviation="2" result="BlurAlpha" />
+      <feOffset in="BlurAlpha" dx="4" dy="4" result="OffsetBlurAlpha" />
+      <feMerge>
+        <feMergeNode in="OffsetBlurAlpha" />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+    
+    <filter id="box.shadowbrush" filterUnits="objectBoundingBox">
+      <feGaussianBlur in="SourceAlpha" stdDeviation="6" result="BlurAlpha" />
+      <feOffset in="BlurAlpha" dx="0" dy="0" result="OffsetBlurAlpha" />
+      <feMerge>
+        <feMergeNode in="OffsetBlurAlpha" />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+    
+
+    <filter id="text.shadowbrush" filterUnits="objectBoundingBox" x="-10%" y="-10%" width="120%" height="120%">
+      <feGaussianBlur in="SourceAlpha" stdDeviation="4" result="blur" />
+      <feOffset in="blur" dx="4" dy="4" result="offsetBlur" />
+      <feSpecularLighting in="blur" surfaceScale="9" specularConstant=".9" specularExponent="20" lighting-color="#bbbbbb" result="specOut">
+        <fePointLight x="-5000" y="-10000" z="20000" />
+      </feSpecularLighting>
+      <feComposite in="specOut" in2="SourceAlpha" operator="in" result="specOut" />
+      <feComposite in="SourceGraphic" in2="specOut" operator="arithmetic" k1="0" k2="1" k3="1" k4="0" result="litPaint" />
+      <feMerge>
+        <feMergeNode in="offsetBlur" />
+        <feMergeNode in="litPaint" />
+      </feMerge>
+    </filter>
+  </defs>
