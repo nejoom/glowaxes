@@ -1,0 +1,7 @@
+To check things out in Eclipse:
+File -> New project -> Check out projects from SVN -> 
+https://glowaxes.svn.sourceforge.net/svnroot/glowaxes/trunk
+Check out as a project configured using the New Project Wizard -> Finished
+Choose Web -> Dynamic Web Project
+Then to compile choose:
+Project preferences -> Java Build Path -> Add Library -> Server Runtime
