@@ -43,7 +43,6 @@ import org.apache.log4j.Logger;
 import org.jdom.Element;
 import org.jdom.output.Format;
 
-// TODO: Auto-generated Javadoc
 /**
  * The Class AreaMap.
  * @author <a href="mailto:eddie@tinyelements.com">Eddie Moojen</a>
