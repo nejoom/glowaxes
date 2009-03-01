@@ -1,0 +1,15 @@
+<!-- 
+
+The contents of this file will be loaded for the glowaxes web application.
+The following sets up a dataSource for a mysql connection to a database with 
+user root, no password, and the database example.
+
+-->
+<Context cookies="false">
+    <Resource name="jdbc/example" auth="Container" type="javax.sql.DataSource"
+        maxActive="50" maxIdle="20" maxWait="5000" username="root"
+        password="" driverClassName="com.mysql.jdbc.Driver"
+        url="jdbc:mysql://localhost/?autoReconnectForPools=true&amp;autoReconnect=true" 
+        validationQuery="SELECT 1" removeAbandoned="true"
+        removeAbandonedTimeout="60" logAbandoned="true" />
+</Context>
